@@ -3,7 +3,8 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: Helvetica;
-  background: url("dark_brick_wall.png");
+  background: black;
+  /*background: url("dark_brick_wall.png"); Stop playing with me*/
   color: white;
   font-family: 'Allerta Stencil', sans-serif;
 }
@@ -33,7 +34,7 @@ h1 .name {
   font-size: 85pt;
   font-family: 'Rock Salt', cursive;
   margin: 0px;
-  color: #36ffe0;
+  color: red;
 }
 
 h3 {

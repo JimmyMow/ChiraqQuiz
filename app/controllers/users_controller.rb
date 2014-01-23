@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @score = @user.score
+    reset_session
   end
 
   # GET /users/new
