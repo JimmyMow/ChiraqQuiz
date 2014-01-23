@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        session[:user] = @user.name
+        session[:user] = @user.id
         format.html { redirect_to question_url('21'), notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
