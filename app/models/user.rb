@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_many :answers
   has_many :quas
 
+
   def score
     qua_score_array = Qua.where(user_id: self.id).map! { |e| e.score }
     qua = qua_score_array.inject{|sum,x| sum + x}
