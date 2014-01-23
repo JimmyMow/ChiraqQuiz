@@ -1,0 +1,10 @@
+<h1>Listing questions</h1>
+  <% @questions.each do |question| %>
+      <%= question.content %>
+
+      <% question.answers.each do |answer| %>
+        <ul>
+          <li><%= link_to answer.content, "#" %></li>
+        </ul>
+      <% end %>
+  <% end %>
