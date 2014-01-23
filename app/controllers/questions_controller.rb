@@ -63,7 +63,7 @@ class QuestionsController < ApplicationController
 
   def qua
     Qua.create(user_id: current_user.id, answer_id: params[:id], score: params[:score], question_id: params[:question_id])
-    if params[:question_id] == '30'
+    if params[:question_id] == '10'
       redirect_to user_url(current_user.id)
     else
       redirect_to question_url(params[:question_id].to_i + 1 )
