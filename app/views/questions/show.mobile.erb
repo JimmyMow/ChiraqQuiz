@@ -1,7 +1,7 @@
 <div class="mobile-container">
   <h1><%= @question.content %></h1>
 
-  <% @question.answers.each do |answer| %>
+  <% @question.answers.shuffle.each do |answer| %>
     <% if current_user.answered_question?(@question.id) %>
       <li><%= answer.content %></li>
     <% else %>
