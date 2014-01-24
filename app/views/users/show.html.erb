@@ -12,5 +12,5 @@
 <h1>You have a <%= @score %>% chance to survive Chiraq</h1>
 <h3><%= link_to "Take the quiz!", new_user_url %></h3>
 
-<a href="https://twitter.com/share?text=I have a <%= @score %> percent chance of surviving Chiraq!" class="twitter-share-button" data-url="https://chiraqquiz.herokuapp.com/users/<%= @user.id %>" data-lang="en" data-count="none">Tweet</a>
+<a href="https://twitter.com/share?text=I have a <%= @score %> percent chance of surviving Chiraq!" class="twitter-share-button" data-url="https://chiraqquiz.herokuapp.com" data-lang="en" data-count="none">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
