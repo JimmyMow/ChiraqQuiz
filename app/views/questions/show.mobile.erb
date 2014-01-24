@@ -2,14 +2,10 @@
   <h1><%= @question.content %></h1>
 
   <% @question.answers.each do |answer| %>
-  <ul>
     <% if current_user.answered_question?(@question.id) %>
       <li><%= answer.content %></li>
     <% else %>
-      <li>
-        <%= link_to answer.content, qua_question_url(answer.id, score: answer.score, question_id: @question.id), { method: 'post', "data-role" => "button" } %>
-      </li>
+        <%= link_to answer.content, qua_question_url(answer.id, score: answer.score, question_id: @question.id), { method: 'post', "data-role" => "button", :class => 'ui-btn ui-icon-check ui-btn-icon-left' } %>
     <% end %>
-  </ul>
   <% end %>
 </div>

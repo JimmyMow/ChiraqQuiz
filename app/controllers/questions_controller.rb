@@ -62,7 +62,12 @@ class QuestionsController < ApplicationController
   end
 
   def qua
-    Qua.create(user_id: current_user.id, answer_id: params[:id], score: params[:score], question_id: params[:question_id])
+    if current_user.answered_question?(params[:question_id])
+      redirect_to :back, notice: 'You have already answered this question'
+    else
+      Qua.create(user_id: current_user.id, answer_id: params[:id], score: params[:score], question_id: params[:question_id])
+    end
+
     if params[:question_id] == '10'
       redirect_to user_url(current_user.id)
     else

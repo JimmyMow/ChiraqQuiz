@@ -1,9 +1,10 @@
 /*
 *= require_self
-*= require mobile/questions
 */
 .mobile-container {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  color: black;
 }
+
