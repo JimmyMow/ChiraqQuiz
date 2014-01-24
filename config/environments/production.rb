@@ -1,6 +1,8 @@
 ChiraqQuiz::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   config.assets.precompile += ['mobile.css']
+  config.assets.precompile += ['themes/ChiraqQuiz.min.css']
+  config.assets.precompile += ['themes/jquery.mobile.icons.min.css']
   # Code is not reloaded between requests.
   config.cache_classes = true
 
