@@ -13,8 +13,8 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: Helvetica;
-  background-color: black;
-  // background: url('dark_brick_wall.png');
+  // background-color: black;
+  background: url('dark_brick_wall.png');
   color: white;
   font-family: 'Allerta Stencil', sans-serif;
   .container {
@@ -48,9 +48,19 @@ h1 {
 }
 
 h3 {
-  color: white;
+  color: black;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 25pt;
+  margin-bottom: 0px;
+  .again {
+    color: $primary-color;
+    text-decoration: none;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 18pt;
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 form input[type='text'] {
@@ -85,3 +95,22 @@ form input[type='text'] {
     }
   }
 }
+
+.username {
+  padding-top: 25px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 24pt;
+  color: black;
+  font-weight: bolder;
+}
+
+.results {
+  margin-bottom: 0px;
+}
+
+.twitter-share-button {
+  padding-bottom: 35px;
+}
+
+
+

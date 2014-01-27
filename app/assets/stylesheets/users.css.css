@@ -3,8 +3,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: Helvetica;
-  background: black;
-  /*background: url("dark_brick_wall.png"); Stop playing with me*/
+  background: url("dark_brick_wall.png");
   color: white;
   font-family: 'Allerta Stencil', sans-serif;
 }
@@ -38,15 +37,29 @@ h1 .name {
 }
 
 h3 {
-  color: #d5ff5c;
+  color: black;
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 25pt;
+  margin-bottom: 0px;
+}
+h3 .again {
+  color: red;
+  text-decoration: none;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 18pt;
+}
+h3 .again:hover {
+  color: white;
 }
 
 form input[type='text'] {
-  width: 300px;
-  height: 25px;
-  border-radius: 10px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  font-size: 25px;
+  outline-width: 0;
 }
 
 .actions {
@@ -68,6 +81,22 @@ form input[type='text'] {
   text-shadow: 0px 0px 0px #70706f;
 }
 .actions .submit:hover {
-  background-color: #36ffe0;
-  border: 2px solid #36ffe0;
+  background-color: red;
+  border: 2px solid red;
+}
+
+.username {
+  padding-top: 25px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 24pt;
+  color: black;
+  font-weight: bolder;
+}
+
+.results {
+  margin-bottom: 0px;
+}
+
+.twitter-share-button {
+  padding-bottom: 35px;
 }

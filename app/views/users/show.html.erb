@@ -1,16 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
+<div class="container">
+
+<p class="username">
+  <%= @user.name %>,
 </p>
 
-<p>
-  <strong>Score:</strong>
-  <%= @user.score %>
-</p>
-<h1>You have a <%= @score %>% chance to survive Chiraq</h1>
-<h3><%= link_to "Take the quiz!", new_user_url %></h3>
+<h2 class="results">Your chances of survival in Chiraq:</h2>
+<h1><span class="name"><%= @score %>%</span></h1>
 
+<h3>Share your results with your friends:</h3>
 <a href="https://twitter.com/share?text=I have a <%= @score %> percent chance of surviving Chiraq!" class="twitter-share-button" data-url="https://chiraqquiz.herokuapp.com" data-lang="en" data-count="none">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+
+<h3><%= link_to "Take the quiz again!", new_user_url, :class => "again" %></h3>

@@ -1,4 +1,8 @@
-<h1><%= @question.content %></h1>
+<div class="pro-container">
+<div class='progress<%= @question.id %>'></div>
+</div>
+
+<h2><%= @question.content %></h2>
 
 <% @question.answers.shuffle.each do |answer| %>
   <ul>

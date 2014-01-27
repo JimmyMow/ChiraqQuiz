@@ -8,8 +8,70 @@ $primary-color: red;
 $secondary-color: rgb(213, 255, 92);
 $transparent-background: rgba(255, 255, 255, 0.2);
 
+
+@mixin progress-bar {
+    height: 20px;
+    background: red;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.pro-container {
+  height: 20px;
+  width: 55%;
+  border: $thin-border;
+  border-radius: 14px;
+  margin: 0px auto;
+  margin-top: 20px;
+  .progress1 {
+    @include progress-bar;
+    width: 10%;
+  }
+  .progress2 {
+    @include progress-bar;
+    width: 20%;
+  }
+  .progress3 {
+    @include progress-bar;
+    width: 30%;
+  }
+  .progress4 {
+    @include progress-bar;
+    width: 40%;
+  }
+  .progress5 {
+    @include progress-bar;
+    width: 50%;
+  }
+  .progress6 {
+    @include progress-bar;
+    width: 60%;
+  }
+  .progress7 {
+    @include progress-bar;
+    width: 70%;
+  }
+  .progress8 {
+    @include progress-bar;
+    width: 80%;
+  }
+  .progress9 {
+    @include progress-bar;
+    width: 90%;
+  }
+  .progress10 {
+    @include progress-bar;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
 h1 {
   margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 28pt;
 }
 
 ul {
@@ -21,7 +83,7 @@ ul {
     font-size: 24pt;
     background: $transparent-background;
     border-radius: 10px;
-    width: 650px;
+    width: 50%;
     margin: 0px auto;
     padding: 5px 0px;
     position: relative;
